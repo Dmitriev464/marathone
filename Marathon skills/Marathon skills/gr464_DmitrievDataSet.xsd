@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="gr464_DmitrievDataSet" targetNamespace="http://tempuri.org/gr464_DmitrievDataSet.xsd" xmlns:mstns="http://tempuri.org/gr464_DmitrievDataSet.xsd" xmlns="http://tempuri.org/gr464_DmitrievDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="gr464_DmitrievConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="gr464_DmitrievConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Marathon_skills.Properties.Settings.GlobalReference.Default.gr464_DmitrievConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="forsponsTableAdapter" GeneratorDataComponentClassName="forsponsTableAdapter" Name="forspons" UserDataComponentName="forsponsTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="gr464_DmitrievConnectionString (Settings)" DbObjectName="gr464_Dmitriev.dbo.forspons" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT DisplayName, RunnerId FROM dbo.forspons</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="DisplayName" DataSetColumn="DisplayName" />
+              <Mapping SourceColumn="RunnerId" DataSetColumn="RunnerId" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="gr464_DmitrievDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="gr464_DmitrievDataSet" msprop:Generator_UserDSName="gr464_DmitrievDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="forspons" msprop:Generator_TableClassName="forsponsDataTable" msprop:Generator_TableVarName="tableforspons" msprop:Generator_TablePropName="forspons" msprop:Generator_RowDeletingName="forsponsRowDeleting" msprop:Generator_RowChangingName="forsponsRowChanging" msprop:Generator_RowEvHandlerName="forsponsRowChangeEventHandler" msprop:Generator_RowDeletedName="forsponsRowDeleted" msprop:Generator_UserTableName="forspons" msprop:Generator_RowChangedName="forsponsRowChanged" msprop:Generator_RowEvArgName="forsponsRowChangeEvent" msprop:Generator_RowClassName="forsponsRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="DisplayName" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnDisplayName" msprop:Generator_ColumnPropNameInRow="DisplayName" msprop:Generator_ColumnPropNameInTable="DisplayNameColumn" msprop:Generator_UserColumnName="DisplayName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="167" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RunnerId" msprop:Generator_ColumnVarNameInTable="columnRunnerId" msprop:Generator_ColumnPropNameInRow="RunnerId" msprop:Generator_ColumnPropNameInTable="RunnerIdColumn" msprop:Generator_UserColumnName="RunnerId" type="xs:int" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:forspons" />
+      <xs:field xpath="mstns:RunnerId" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
