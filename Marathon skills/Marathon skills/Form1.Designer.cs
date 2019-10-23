@@ -124,9 +124,9 @@
             this.label3.ForeColor = System.Drawing.Color.Silver;
             this.label3.Location = new System.Drawing.Point(192, 55);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(150, 16);
+            this.label3.Size = new System.Drawing.Size(47, 16);
             this.label3.TabIndex = 7;
-            this.label3.Text = "среда 21 октября 2019";
+            this.label3.Text = "среда\r\n";
             // 
             // timer1
             // 

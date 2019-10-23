@@ -32,6 +32,8 @@ namespace Marathon_skills
         private void timer1_Tick(object sender, EventArgs e)
         {
             TimeSpan t1 = Program.start - DateTime.Now;
+            DateTime t2=DateTime.Now;
+            label3.Text = Program.start.ToString();
             tmr1.Text = t1.Days.ToString() + " days, " + t1.Hours.ToString() + " hours, " + t1.Minutes.ToString() + " minutes";
         }
 
