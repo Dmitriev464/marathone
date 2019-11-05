@@ -27,7 +27,7 @@ namespace Marathon_skills
         private void timer1_Tick(object sender, EventArgs e)
         {
             TimeSpan t = Program.start - DateTime.Now;
-            tmr3.Text = t.Days.ToString() + " days, " + t.Hours.ToString() + " hours, " + t.Minutes.ToString() + " minutes";
+            if (Program.start > DateTime.Now) tmr3.Text = t.Days.ToString() + " days, " + t.Hours.ToString() + " hours, " + t.Minutes.ToString() + " minutes";
         }
 
         private void char_btn_Click(object sender, EventArgs e)
@@ -37,9 +37,5 @@ namespace Marathon_skills
             this.Close();
         }
 
-        private void informwin_FormClosed(object sender, FormClosedEventArgs e)
-        {
-            Application.Exit();
-        }
     }
 }

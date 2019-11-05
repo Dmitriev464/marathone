@@ -33,7 +33,7 @@ namespace Marathon_skills
         private void timer1_Tick(object sender, EventArgs e)
         {
             TimeSpan t = Program.start - DateTime.Now;
-            tmr2.Text = t.Days.ToString() + " days, " + t.Hours.ToString() + " hours, " + t.Minutes.ToString() + " minutes";
+            if (Program.start > DateTime.Now) tmr2.Text = t.Days.ToString() + " days, " + t.Hours.ToString() + " hours, " + t.Minutes.ToString() + " minutes";
         }
 
         private void Sponsor_Load(object sender, EventArgs e)

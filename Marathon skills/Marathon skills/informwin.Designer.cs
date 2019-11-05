@@ -142,6 +142,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(493, 393);
+            this.ControlBox = false;
             this.Controls.Add(this.label2);
             this.Controls.Add(this.char_btn);
             this.Controls.Add(this.button4);
@@ -157,7 +158,6 @@
             this.Name = "informwin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Marathon Skills 2019 - Find out more information";
-            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.informwin_FormClosed);
             this.ResumeLayout(false);
             this.PerformLayout();
 
