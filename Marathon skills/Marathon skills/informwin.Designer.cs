@@ -157,6 +157,7 @@
             this.Name = "informwin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Marathon Skills 2019 - Find out more information";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.informwin_FormClosed);
             this.ResumeLayout(false);
             this.PerformLayout();
 

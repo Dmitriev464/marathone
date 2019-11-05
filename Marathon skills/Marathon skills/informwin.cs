@@ -36,5 +36,10 @@ namespace Marathon_skills
             cha.Show();
             this.Close();
         }
+
+        private void informwin_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
