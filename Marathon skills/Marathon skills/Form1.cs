@@ -34,7 +34,8 @@ namespace Marathon_skills
             TimeSpan t1 = Program.start - DateTime.Now;
             DateTime t2=DateTime.Now;
             label3.Text = Program.start.ToString();
-            tmr1.Text = t1.Days.ToString() + " days, " + t1.Hours.ToString() + " hours, " + t1.Minutes.ToString() + " minutes";
+            if (Program.start > DateTime.Now) tmr1.Text = t1.Days.ToString() + " days, " + t1.Hours.ToString() + " hours, " + t1.Minutes.ToString() + " minutes";
+
         }
 
         private void btn_inform_Click(object sender, EventArgs e)

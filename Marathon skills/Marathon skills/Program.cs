@@ -8,7 +8,7 @@ namespace Marathon_skills
 {
     static class Program
     {
-        public static DateTime start = new DateTime(2019, 10, 30, 12, 00, 00);
+        public static DateTime start = new DateTime(2019, 11, 30, 12, 00, 00);
         /// <summary>
         /// The main entry point for the application.
         /// </summary>

@@ -138,9 +138,8 @@
             this.tmr1.AutoSize = true;
             this.tmr1.Location = new System.Drawing.Point(143, 350);
             this.tmr1.Name = "tmr1";
-            this.tmr1.Size = new System.Drawing.Size(35, 13);
+            this.tmr1.Size = new System.Drawing.Size(0, 13);
             this.tmr1.TabIndex = 8;
-            this.tmr1.Text = "label4";
             // 
             // Form1
             // 
