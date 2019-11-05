@@ -152,6 +152,8 @@
             this.Controls.Add(this.btn_bck_inform);
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "informwin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Marathon Skills 2019 - Find out more information";
