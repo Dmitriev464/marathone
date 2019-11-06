@@ -45,6 +45,13 @@ namespace Marathon_skills
             inf.Show();
         }
 
+        private void button5_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            login log = new login();
+            log.Show();
+        }
+
 
     }
 }

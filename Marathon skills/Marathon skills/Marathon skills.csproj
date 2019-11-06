@@ -76,6 +76,12 @@
     <Compile Include="iwannaberunner.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="login.Designer.cs">
+      <DependentUpon>login.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Sponsor.cs">
@@ -110,6 +116,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="iwannaberunner.resx">
       <DependentUpon>iwannaberunner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="login.resx">
+      <DependentUpon>login.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

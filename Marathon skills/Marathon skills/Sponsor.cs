@@ -184,7 +184,7 @@ namespace Marathon_skills
         {
             char number = e.KeyChar;
 
-            if (!Char.IsDigit(number))
+            if (!Charitier.IsDigit(number))
             {
                 e.Handled = true;
             }
@@ -199,7 +199,7 @@ namespace Marathon_skills
         private void spons_name_KeyPress(object sender, KeyPressEventArgs e)
         {
              
-            if (!Char.IsDigit(e.KeyChar)) return;
+            if (!Charitier.IsDigit(e.KeyChar)) return;
             else
                 e.Handled = true;
         }
@@ -211,7 +211,7 @@ namespace Marathon_skills
             {
                 e.Handled = true;
             }
-            if (!Char.IsDigit(e.KeyChar)) return;
+            if (!Charitier.IsDigit(e.KeyChar)) return;
             else
                 e.Handled = true;
         }
