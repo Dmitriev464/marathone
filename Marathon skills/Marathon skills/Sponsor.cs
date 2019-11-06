@@ -85,7 +85,7 @@ namespace Marathon_skills
             }
 
             DateTime tm = DateTime.Now;
-            if (string.IsNullOrEmpty(msk_cvc.Text)|| msk_cvc.TextLength ==3  || string.IsNullOrEmpty(msk_card.Text))
+            if (string.IsNullOrEmpty(msk_cvc.Text)&& (msk_cvc.TextLength == 3)  && string.IsNullOrEmpty(msk_card.Text))
             {
                 MessageBox.Show("Введите CVC и номер карты");
             }
