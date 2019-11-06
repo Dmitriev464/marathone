@@ -35,6 +35,12 @@ namespace Marathon_skills
                 mail = rdr.GetString(0);
                 pass= rdr.GetString(1);
                 role = rdr.GetString(2);
+                switch (role)
+                {
+                    case "A": 
+                    case "C":
+                    case "R":
+                }
             }
         }
 

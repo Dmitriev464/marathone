@@ -44,6 +44,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin.Designer.cs">
+      <DependentUpon>Admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Charitier.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Charitier.Designer.cs">
+      <DependentUpon>Charitier.cs</DependentUpon>
+    </Compile>
     <Compile Include="charities.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -84,6 +96,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Runner.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Runner.Designer.cs">
+      <DependentUpon>Runner.cs</DependentUpon>
+    </Compile>
     <Compile Include="Sponsor.cs">
       <SubType>Form</SubType>
     </Compile>
