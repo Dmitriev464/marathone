@@ -36,7 +36,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(292, 273);
             this.Name = "Coordinator";
-            this.Text = "Char";
+            this.Text = "Coordinator menu";
             this.ResumeLayout(false);
 
         }

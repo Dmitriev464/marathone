@@ -41,8 +41,8 @@ namespace Marathon_skills
                         adm.Show();
                         this.Close();
                         break;
-                    case "C": Coordinator cha = new Coordinator();
-                        cha.Show();
+                    case "C": Coordinator coor = new Coordinator();
+                        coor.Show();
                         this.Close();
                         break;
                     case "R": Runner runn = new Runner();
