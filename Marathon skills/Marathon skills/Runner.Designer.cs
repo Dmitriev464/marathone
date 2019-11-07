@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.logout_btn = new System.Windows.Forms.Button();
@@ -36,6 +37,8 @@
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.tmr4 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -128,11 +131,27 @@
             this.button5.Text = "Мой спонсор";
             this.button5.UseVisualStyleBackColor = true;
             // 
+            // timer1
+            // 
+            this.timer1.Enabled = true;
+            this.timer1.Interval = 10;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // tmr4
+            // 
+            this.tmr4.AutoSize = true;
+            this.tmr4.ForeColor = System.Drawing.Color.Black;
+            this.tmr4.Location = new System.Drawing.Point(176, 349);
+            this.tmr4.Name = "tmr4";
+            this.tmr4.Size = new System.Drawing.Size(0, 13);
+            this.tmr4.TabIndex = 35;
+            // 
             // Runner
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(425, 371);
+            this.Controls.Add(this.tmr4);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
@@ -159,5 +178,7 @@
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Label tmr4;
     }
 }

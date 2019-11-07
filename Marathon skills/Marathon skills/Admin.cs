@@ -24,6 +24,13 @@ namespace Marathon_skills
             this.Close();
         }
 
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            TimeSpan t = Program.start - DateTime.Now;
+            if (Program.start > DateTime.Now) tmr4.Text = t.Days.ToString() + " days, " + t.Hours.ToString() + " hours, " + t.Minutes.ToString() + " minutes";
+
+        }
+
 
     }
 }
