@@ -34,7 +34,7 @@
             this.logout_btn = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.contactrun_btn = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
@@ -98,16 +98,17 @@
             this.button2.Text = "Редактирование профиля";
             this.button2.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // contactrun_btn
             // 
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button3.ForeColor = System.Drawing.Color.Black;
-            this.button3.Location = new System.Drawing.Point(61, 246);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(128, 58);
-            this.button3.TabIndex = 20;
-            this.button3.Text = "Контакты";
-            this.button3.UseVisualStyleBackColor = true;
+            this.contactrun_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.contactrun_btn.ForeColor = System.Drawing.Color.Black;
+            this.contactrun_btn.Location = new System.Drawing.Point(61, 246);
+            this.contactrun_btn.Name = "contactrun_btn";
+            this.contactrun_btn.Size = new System.Drawing.Size(128, 58);
+            this.contactrun_btn.TabIndex = 20;
+            this.contactrun_btn.Text = "Контакты";
+            this.contactrun_btn.UseVisualStyleBackColor = true;
+            this.contactrun_btn.Click += new System.EventHandler(this.contactrun_btn_Click);
             // 
             // button4
             // 
@@ -154,7 +155,7 @@
             this.Controls.Add(this.tmr4);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
+            this.Controls.Add(this.contactrun_btn);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.logout_btn);
@@ -175,7 +176,7 @@
         private System.Windows.Forms.Button logout_btn;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button contactrun_btn;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Timer timer1;

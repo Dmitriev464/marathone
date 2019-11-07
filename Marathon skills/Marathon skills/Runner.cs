@@ -31,5 +31,13 @@ namespace Marathon_skills
             if (Program.start > DateTime.Now) tmr4.Text = t.Days.ToString() + " days, " + t.Hours.ToString() + " hours, " + t.Minutes.ToString() + " minutes";
 
         }
+
+        private void contactrun_btn_Click(object sender, EventArgs e)
+        {
+            contactrun cont = new contactrun();
+            cont.Show();
+        }
+
+
     }
 }
