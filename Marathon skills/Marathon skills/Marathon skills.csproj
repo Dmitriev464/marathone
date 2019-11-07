@@ -50,6 +50,12 @@
     <Compile Include="Admin.Designer.cs">
       <DependentUpon>Admin.cs</DependentUpon>
     </Compile>
+    <Compile Include="contactrun.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="contactrun.Designer.cs">
+      <DependentUpon>contactrun.cs</DependentUpon>
+    </Compile>
     <Compile Include="Coordinator.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -122,6 +128,9 @@
     </Compile>
     <EmbeddedResource Include="Admin.resx">
       <DependentUpon>Admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="contactrun.resx">
+      <DependentUpon>contactrun.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Coordinator.resx">
       <DependentUpon>Coordinator.cs</DependentUpon>
