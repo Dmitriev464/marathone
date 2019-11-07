@@ -27,7 +27,7 @@ namespace Marathon_skills
             connetionString = ("Data Source=127.0.0.1;Initial Catalog=gr464_Dmitriev;User ID=student;Password=student");
             con = new SqlConnection(connetionString);
             con.Open();
-            cmd = new SqlCommand("SELECT FROM User (Email, Password, RoleId)", con);
+            cmd = new SqlCommand("SELECT [Email], [Password], [RoleId] FROM [User] where [Email]='"+emailtxt.Text+"'AND [Password]= '"+passwordtxt.Text+"'", con);
             SqlDataReader rdr=cmd.ExecuteReader();
 
             while (rdr.Read())
@@ -37,10 +37,19 @@ namespace Marathon_skills
                 role = rdr.GetString(2);
                 switch (role)
                 {
-                    case "A": 
-                    case "C":
-                    case "R":
-                }
+                    case "A": Admin adm = new Admin();
+                        adm.Show();
+                        this.Close();
+                        break;
+                    case "C": Coordinator cha = new Coordinator();
+                        cha.Show();
+                        this.Close();
+                        break;
+                    case "R": Runner runn = new Runner();
+                        runn.Show();
+                        this.Close();
+                        break;
+                } 
             }
         }
 

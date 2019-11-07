@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Marathon_skills
 {
-    public partial class Charitier : Form
+    public partial class Coordinator : Form
     {
-        public Charitier()
+        public Coordinator()
         {
             InitializeComponent();
         }
