@@ -15,3 +15,6 @@ C:\Users\user05\Desktop\464 dmitriev\programma\Marathon skills\Marathon skills\o
 C:\Users\user05\Desktop\464 dmitriev\programma\Marathon skills\Marathon skills\obj\Debug\Marathon_skills.informwin.resources
 C:\Users\user05\Desktop\464 dmitriev\programma\Marathon skills\Marathon skills\obj\Debug\Marathon_skills.UserControl1.resources
 C:\Users\user05\Desktop\464 dmitriev\programma\Marathon skills\Marathon skills\obj\Debug\Marathon_skills.login.resources
+C:\Users\user05\Desktop\464 dmitriev\programma\Marathon skills\Marathon skills\obj\Debug\Marathon_skills.Admin.resources
+C:\Users\user05\Desktop\464 dmitriev\programma\Marathon skills\Marathon skills\obj\Debug\Marathon_skills.Coordinator.resources
+C:\Users\user05\Desktop\464 dmitriev\programma\Marathon skills\Marathon skills\obj\Debug\Marathon_skills.Runner.resources

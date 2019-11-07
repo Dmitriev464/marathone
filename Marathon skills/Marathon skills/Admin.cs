@@ -16,5 +16,14 @@ namespace Marathon_skills
         {
             InitializeComponent();
         }
+
+        private void logout_btn_Click(object sender, EventArgs e)
+        {
+            Form1 main = new Form1();
+            main.Show();
+            this.Close();
+        }
+
+
     }
 }

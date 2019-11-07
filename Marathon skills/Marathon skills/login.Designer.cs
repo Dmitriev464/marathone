@@ -147,6 +147,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(355, 273);
+            this.ControlBox = false;
             this.Controls.Add(this.tmr4);
             this.Controls.Add(this.log_btn);
             this.Controls.Add(this.passwordtxt);
@@ -157,6 +158,9 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "login";
@@ -175,8 +179,8 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox emailtxt;
         private System.Windows.Forms.TextBox passwordtxt;
-        private System.Windows.Forms.Button log_btn;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Label tmr4;
+        private System.Windows.Forms.Button log_btn;
     }
 }

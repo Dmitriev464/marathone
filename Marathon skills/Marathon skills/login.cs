@@ -18,7 +18,7 @@ namespace Marathon_skills
             InitializeComponent();
         }
 
-        private void log_btn_Click(object sender, EventArgs e)
+        public void log_btn_Click(object sender, EventArgs e)
         {
             string mail, pass, role;
             string connetionString = null;
@@ -51,6 +51,8 @@ namespace Marathon_skills
                         break;
                 } 
             }
+            con.Close();
+            
         }
 
         private void btn_bck_inform_Click(object sender, EventArgs e)
