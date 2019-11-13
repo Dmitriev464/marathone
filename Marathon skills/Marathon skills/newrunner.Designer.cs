@@ -31,7 +31,7 @@
             this.btn_bck_spons = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.newrun_btn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btn_bck_spons
@@ -68,14 +68,15 @@
             this.button1.Text = "Я участвовал ранее";
             this.button1.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // newrun_btn
             // 
-            this.button2.Location = new System.Drawing.Point(108, 153);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(154, 43);
-            this.button2.TabIndex = 14;
-            this.button2.Text = "Я новый участник";
-            this.button2.UseVisualStyleBackColor = true;
+            this.newrun_btn.Location = new System.Drawing.Point(108, 153);
+            this.newrun_btn.Name = "newrun_btn";
+            this.newrun_btn.Size = new System.Drawing.Size(154, 43);
+            this.newrun_btn.TabIndex = 14;
+            this.newrun_btn.Text = "Я новый участник";
+            this.newrun_btn.UseVisualStyleBackColor = true;
+            this.newrun_btn.Click += new System.EventHandler(this.newrun_btn_Click);
             // 
             // newrunner
             // 
@@ -83,13 +84,15 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(364, 273);
             this.ControlBox = false;
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.newrun_btn);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btn_bck_spons);
             this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "newrunner";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "newrunner";
             this.ResumeLayout(false);
 
@@ -100,6 +103,6 @@
         private System.Windows.Forms.Button btn_bck_spons;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button newrun_btn;
     }
 }

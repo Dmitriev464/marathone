@@ -29,11 +29,11 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.button1 = new System.Windows.Forms.Button();
+            this.wantberun_btn = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.btn_inform = new System.Windows.Forms.Button();
             this.btn_sponsor = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
+            this.log_btn = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -41,16 +41,16 @@
             this.tmr1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // button1
+            // wantberun_btn
             // 
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(35, 105);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(201, 72);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Я хочу стать бегуном";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.wantberun_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.wantberun_btn.Location = new System.Drawing.Point(35, 105);
+            this.wantberun_btn.Name = "wantberun_btn";
+            this.wantberun_btn.Size = new System.Drawing.Size(201, 72);
+            this.wantberun_btn.TabIndex = 0;
+            this.wantberun_btn.Text = "Я хочу стать бегуном";
+            this.wantberun_btn.UseVisualStyleBackColor = true;
+            this.wantberun_btn.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
@@ -84,15 +84,15 @@
             this.btn_sponsor.UseVisualStyleBackColor = true;
             this.btn_sponsor.Click += new System.EventHandler(this.btn_sponsor_Click);
             // 
-            // button5
+            // log_btn
             // 
-            this.button5.Location = new System.Drawing.Point(419, 334);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(75, 23);
-            this.button5.TabIndex = 4;
-            this.button5.Text = "Login";
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
+            this.log_btn.Location = new System.Drawing.Point(419, 334);
+            this.log_btn.Name = "log_btn";
+            this.log_btn.Size = new System.Drawing.Size(75, 23);
+            this.log_btn.TabIndex = 4;
+            this.log_btn.Text = "Login";
+            this.log_btn.UseVisualStyleBackColor = true;
+            this.log_btn.Click += new System.EventHandler(this.button5_Click);
             // 
             // label1
             // 
@@ -152,11 +152,11 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.button5);
+            this.Controls.Add(this.log_btn);
             this.Controls.Add(this.btn_sponsor);
             this.Controls.Add(this.btn_inform);
             this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.wantberun_btn);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
@@ -171,11 +171,11 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button wantberun_btn;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button btn_inform;
         private System.Windows.Forms.Button btn_sponsor;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button log_btn;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;

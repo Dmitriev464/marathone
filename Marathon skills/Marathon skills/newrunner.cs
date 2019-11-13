@@ -23,5 +23,12 @@ namespace Marathon_skills
             main.Show();
             this.Close();
         }
+
+        private void newrun_btn_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            registrationnewrunner regrun = new registrationnewrunner();
+            regrun.Show();
+        }
     }
 }
