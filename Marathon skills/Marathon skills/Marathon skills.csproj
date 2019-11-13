@@ -79,6 +79,16 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>gr464_DmitrievDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="gr464_DmitrievDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>gr464_DmitrievDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="gr464_DmitrievDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>gr464_DmitrievDataSet2.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Information_redcross.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -197,6 +207,28 @@
     </None>
     <None Include="gr464_DmitrievDataSet.xss">
       <DependentUpon>gr464_DmitrievDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="gr464_DmitrievDataSet1.xsc">
+      <DependentUpon>gr464_DmitrievDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="gr464_DmitrievDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>gr464_DmitrievDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="gr464_DmitrievDataSet1.xss">
+      <DependentUpon>gr464_DmitrievDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="gr464_DmitrievDataSet2.xsc">
+      <DependentUpon>gr464_DmitrievDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="gr464_DmitrievDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>gr464_DmitrievDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="gr464_DmitrievDataSet2.xss">
+      <DependentUpon>gr464_DmitrievDataSet2.xsd</DependentUpon>
     </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
