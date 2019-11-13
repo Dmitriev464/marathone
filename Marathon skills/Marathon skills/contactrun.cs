@@ -10,10 +10,16 @@ using System.Windows.Forms;
 
 namespace Marathon_skills
 {
-    public partial class iwannaberunner : Form
+    public partial class contactrun : Form
     {
-        public iwannaberunner()
+        public contactrun()
         {
+            InitializeComponent();
+        }
+
+        private void btn_close_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

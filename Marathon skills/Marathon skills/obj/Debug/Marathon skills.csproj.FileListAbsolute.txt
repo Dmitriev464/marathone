@@ -1,6 +1,5 @@
 C:\Users\user05\Desktop\464 dmitriev\programma\Marathon skills\Marathon skills\bin\Debug\Marathon skills.exe.config
 C:\Users\user05\Desktop\464 dmitriev\programma\Marathon skills\Marathon skills\obj\Debug\Marathon skills.csprojResolveAssemblyReference.cache
-C:\Users\user05\Desktop\464 dmitriev\programma\Marathon skills\Marathon skills\obj\Debug\Marathon_skills.iwannaberunner.resources
 C:\Users\user05\Desktop\464 dmitriev\programma\Marathon skills\Marathon skills\obj\Debug\Marathon_skills.Properties.Resources.resources
 C:\Users\user05\Desktop\464 dmitriev\programma\Marathon skills\Marathon skills\obj\Debug\Marathon_skills.Sponsor.resources
 C:\Users\user05\Desktop\464 dmitriev\programma\Marathon skills\Marathon skills\obj\Debug\Marathon skills.csproj.GenerateResource.Cache
@@ -18,3 +17,5 @@ C:\Users\user05\Desktop\464 dmitriev\programma\Marathon skills\Marathon skills\o
 C:\Users\user05\Desktop\464 dmitriev\programma\Marathon skills\Marathon skills\obj\Debug\Marathon_skills.Admin.resources
 C:\Users\user05\Desktop\464 dmitriev\programma\Marathon skills\Marathon skills\obj\Debug\Marathon_skills.Coordinator.resources
 C:\Users\user05\Desktop\464 dmitriev\programma\Marathon skills\Marathon skills\obj\Debug\Marathon_skills.Runner.resources
+C:\Users\user05\Desktop\464 dmitriev\programma\Marathon skills\Marathon skills\obj\Debug\Marathon_skills.contactrun.resources
+C:\Users\user05\Desktop\464 dmitriev\programma\Marathon skills\Marathon skills\obj\Debug\Marathon_skills.newrunner.resources
