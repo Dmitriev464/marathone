@@ -69,5 +69,15 @@ namespace Marathon_skills.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Custom_Icon_Design_Mono_Business_2_Calendar {
+            get {
+                object obj = ResourceManager.GetObject("Custom-Icon-Design-Mono-Business-2-Calendar", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }
