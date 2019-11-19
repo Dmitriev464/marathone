@@ -80,11 +80,13 @@ namespace Marathon_skills
                 MessageBox.Show("Неверно введена почта");
             }
 
-            else if (pass_txt.TextLength <= 5 )
+            else if (pass_txt.TextLength <= 5)
             {
                 MessageBox.Show("Пароль меньше нужной длинны");
+                
             }
-
+            
+            
             
 
 
