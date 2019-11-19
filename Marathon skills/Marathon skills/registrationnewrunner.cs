@@ -74,18 +74,25 @@ namespace Marathon_skills
             string pattern = @"^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$";
             Regex r = new Regex(pattern, RegexOptions.IgnoreCase);
             bool matched = r.Match(email_txt.Text).Success;
-
+          
             if (matched != true)
             {
                 MessageBox.Show("Неверно введена почта");
             }
 
-           
+            else if (pass_txt.TextLength <= 5 )
+            {
+                MessageBox.Show("Пароль меньше нужной длинны");
+            }
+
+            
+
+
             else if (string.IsNullOrEmpty(email_txt.Text) || string.IsNullOrEmpty(pass_txt.Text) || string.IsNullOrEmpty(passconf_txt.Text) || string.IsNullOrEmpty(fname_txt.Text) || string.IsNullOrEmpty(lname_txt.Text))
             {
                 MessageBox.Show("Все поля должны быть заполнены");
             }
-          
+
             else
             {
                 registration reg = new registration();
