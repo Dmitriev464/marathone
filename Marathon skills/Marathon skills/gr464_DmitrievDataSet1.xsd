@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="gr464_DmitrievDataSet1" targetNamespace="http://tempuri.org/gr464_DmitrievDataSet1.xsd" xmlns:mstns="http://tempuri.org/gr464_DmitrievDataSet1.xsd" xmlns="http://tempuri.org/gr464_DmitrievDataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="gr464_DmitrievConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="gr464_DmitrievConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Marathon_skills.Properties.Settings.GlobalReference.Default.gr464_DmitrievConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="gendervTableAdapter" GeneratorDataComponentClassName="gendervTableAdapter" Name="genderv" UserDataComponentName="gendervTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="gr464_DmitrievConnectionString (Settings)" DbObjectName="gr464_Dmitriev.dbo.genderv" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Pol FROM dbo.genderv</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Pol" DataSetColumn="Pol" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="gr464_DmitrievDataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="gr464_DmitrievDataSet1" msprop:Generator_UserDSName="gr464_DmitrievDataSet1">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="genderv" msprop:Generator_TableClassName="gendervDataTable" msprop:Generator_TableVarName="tablegenderv" msprop:Generator_TablePropName="genderv" msprop:Generator_RowDeletingName="gendervRowDeleting" msprop:Generator_RowChangingName="gendervRowChanging" msprop:Generator_RowEvHandlerName="gendervRowChangeEventHandler" msprop:Generator_RowDeletedName="gendervRowDeleted" msprop:Generator_UserTableName="genderv" msprop:Generator_RowChangedName="gendervRowChanged" msprop:Generator_RowEvArgName="gendervRowChangeEvent" msprop:Generator_RowClassName="gendervRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Pol" msprop:Generator_ColumnVarNameInTable="columnPol" msprop:Generator_ColumnPropNameInRow="Pol" msprop:Generator_ColumnPropNameInTable="PolColumn" msprop:Generator_UserColumnName="Pol">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:genderv" />
+      <xs:field xpath="mstns:Pol" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="gr464_DmitrievDataSet2" targetNamespace="http://tempuri.org/gr464_DmitrievDataSet2.xsd" xmlns:mstns="http://tempuri.org/gr464_DmitrievDataSet2.xsd" xmlns="http://tempuri.org/gr464_DmitrievDataSet2.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="gr464_DmitrievConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="gr464_DmitrievConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Marathon_skills.Properties.Settings.GlobalReference.Default.gr464_DmitrievConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="countryvTableAdapter" GeneratorDataComponentClassName="countryvTableAdapter" Name="countryv" UserDataComponentName="countryvTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="gr464_DmitrievConnectionString (Settings)" DbObjectName="gr464_Dmitriev.dbo.countryv" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Country FROM dbo.countryv</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Country" DataSetColumn="Country" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="gr464_DmitrievDataSet2" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="gr464_DmitrievDataSet2" msprop:Generator_UserDSName="gr464_DmitrievDataSet2">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="countryv" msprop:Generator_TableClassName="countryvDataTable" msprop:Generator_TableVarName="tablecountryv" msprop:Generator_TablePropName="countryv" msprop:Generator_RowDeletingName="countryvRowDeleting" msprop:Generator_RowChangingName="countryvRowChanging" msprop:Generator_RowEvHandlerName="countryvRowChangeEventHandler" msprop:Generator_RowDeletedName="countryvRowDeleted" msprop:Generator_UserTableName="countryv" msprop:Generator_RowChangedName="countryvRowChanged" msprop:Generator_RowEvArgName="countryvRowChangeEvent" msprop:Generator_RowClassName="countryvRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Country" msprop:Generator_ColumnVarNameInTable="columnCountry" msprop:Generator_ColumnPropNameInRow="Country" msprop:Generator_ColumnPropNameInTable="CountryColumn" msprop:Generator_UserColumnName="Country">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
