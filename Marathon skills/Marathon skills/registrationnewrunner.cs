@@ -72,22 +72,38 @@ namespace Marathon_skills
         {
 
             string pattern = @"^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$";
+            string pattern2=@"(?=.*[0-9])(?=.*[!@#$%^&*])(?=.*[a-z])(?=.*[A-Z])[0-9a-zA-Z!@#$%^&*]{6,}$";
+           
             Regex r = new Regex(pattern, RegexOptions.IgnoreCase);
             bool matched = r.Match(email_txt.Text).Success;
           
+            Regex r2 = new Regex(pattern2, RegexOptions.IgnoreCase);
+            bool matched2 = r2.Match(pass_txt.Text).Success;
+
+            int vozr = DateTime.Now.Year - calendar_newr.SelectionStart.Year;
+
+
             if (matched != true)
             {
                 MessageBox.Show("Неверно введена почта");
             }
 
-            else if (pass_txt.TextLength <= 5)
+            else if (matched2!=true)
             {
-                MessageBox.Show("Пароль меньше нужной длинны");
+                MessageBox.Show("Пароль не свопадает с требованиями");
                 
             }
+
+            else if (pass_txt.Text != passconf_txt.Text)
+            {
+                MessageBox.Show("Пароли не совпадают");
+            }
             
-            
-            
+
+            else if (vozr<=10)
+            {
+                MessageBox.Show("Вам должно быть больше 10 лет");
+            }
 
 
             else if (string.IsNullOrEmpty(email_txt.Text) || string.IsNullOrEmpty(pass_txt.Text) || string.IsNullOrEmpty(passconf_txt.Text) || string.IsNullOrEmpty(fname_txt.Text) || string.IsNullOrEmpty(lname_txt.Text))
