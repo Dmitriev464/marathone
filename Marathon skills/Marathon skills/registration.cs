@@ -23,19 +23,22 @@ namespace Marathon_skills
             this.charvTableAdapter.Fill(this.gr464_DmitrievDataSet3.charv);
 
         }
+        int f = 145;
+        int h = 75;
+        int m = 20;
+        int va = 0;
+        int vb = 20;
+        int vc = 45;
 
         private void fulmar_chk_CheckedChanged(object sender, EventArgs e)
         {
-            int f= 145;
-            int h=75;
-            int m = 20;
-            int va=0;
-            int vb=20;
-            int vc=45;
 
 
-            label8.Text = "$" + (f + h + m + va + vb + vc);
-
+            if (fulmar_chk.Checked == true)
+            {
+                label8.Text = "$" + f;
+            }
+            else { label8.Text ="$"+ (-f); }
         }
 
        
