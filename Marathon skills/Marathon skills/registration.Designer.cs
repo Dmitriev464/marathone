@@ -50,12 +50,12 @@
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.sex_cmb = new System.Windows.Forms.ComboBox();
-            this.gr464_DmitrievDataSet3 = new Marathon_skills.gr464_DmitrievDataSet3();
             this.charvBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.gr464_DmitrievDataSet3 = new Marathon_skills.gr464_DmitrievDataSet3();
             this.charvTableAdapter = new Marathon_skills.gr464_DmitrievDataSet3TableAdapters.charvTableAdapter();
             this.info_redcross = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.gr464_DmitrievDataSet3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.charvBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gr464_DmitrievDataSet3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.info_redcross)).BeginInit();
             this.SuspendLayout();
             // 
@@ -114,6 +114,7 @@
             this.fulmar_chk.TabIndex = 17;
             this.fulmar_chk.Text = "42km Полный марафон($145)";
             this.fulmar_chk.UseVisualStyleBackColor = true;
+            this.fulmar_chk.CheckedChanged += new System.EventHandler(this.fulmar_chk_CheckedChanged);
             // 
             // halfmar_chk
             // 
@@ -257,15 +258,15 @@
             this.sex_cmb.TabIndex = 32;
             this.sex_cmb.ValueMember = "CharityName";
             // 
-            // gr464_DmitrievDataSet3
-            // 
-            this.gr464_DmitrievDataSet3.DataSetName = "gr464_DmitrievDataSet3";
-            this.gr464_DmitrievDataSet3.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
             // charvBindingSource
             // 
             this.charvBindingSource.DataMember = "charv";
             this.charvBindingSource.DataSource = this.gr464_DmitrievDataSet3;
+            // 
+            // gr464_DmitrievDataSet3
+            // 
+            this.gr464_DmitrievDataSet3.DataSetName = "gr464_DmitrievDataSet3";
+            this.gr464_DmitrievDataSet3.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // charvTableAdapter
             // 
@@ -313,8 +314,8 @@
             this.Name = "registration";
             this.Text = "registration";
             this.Load += new System.EventHandler(this.registration_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.gr464_DmitrievDataSet3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.charvBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gr464_DmitrievDataSet3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.info_redcross)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

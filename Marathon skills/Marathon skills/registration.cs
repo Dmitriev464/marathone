@@ -23,5 +23,18 @@ namespace Marathon_skills
             this.charvTableAdapter.Fill(this.gr464_DmitrievDataSet3.charv);
 
         }
+
+        private void fulmar_chk_CheckedChanged(object sender, EventArgs e)
+        {
+            if (fulmar_chk.Checked == true)
+            {
+                label8.Text = "$" + 145;
+            }
+            else { label8.Text=}
+
+        }
+
+       
+       
     }
 }
