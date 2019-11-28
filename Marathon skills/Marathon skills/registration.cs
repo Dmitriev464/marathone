@@ -26,11 +26,15 @@ namespace Marathon_skills
 
         private void fulmar_chk_CheckedChanged(object sender, EventArgs e)
         {
-            if (fulmar_chk.Checked == true)
-            {
-                label8.Text = "$" + 145;
-            }
-            else { label8.Text=}
+            int f= 145;
+            int h=75;
+            int m = 20;
+            int va=0;
+            int vb=20;
+            int vc=45;
+
+
+            label8.Text = "$" + (f + h + m + va + vb + vc);
 
         }
 
