@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="gr464_DmitrievDataSet3" targetNamespace="http://tempuri.org/gr464_DmitrievDataSet3.xsd" xmlns:mstns="http://tempuri.org/gr464_DmitrievDataSet3.xsd" xmlns="http://tempuri.org/gr464_DmitrievDataSet3.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="gr464_DmitrievConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="gr464_DmitrievConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Marathon_skills.Properties.Settings.GlobalReference.Default.gr464_DmitrievConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="charvTableAdapter" GeneratorDataComponentClassName="charvTableAdapter" Name="charv" UserDataComponentName="charvTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="gr464_DmitrievConnectionString (Settings)" DbObjectName="gr464_Dmitriev.dbo.charv" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT CharityName FROM dbo.charv</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="CharityName" DataSetColumn="CharityName" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="gr464_DmitrievDataSet3" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="gr464_DmitrievDataSet3" msprop:Generator_UserDSName="gr464_DmitrievDataSet3">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="charv" msprop:Generator_TableClassName="charvDataTable" msprop:Generator_TableVarName="tablecharv" msprop:Generator_TablePropName="charv" msprop:Generator_RowDeletingName="charvRowDeleting" msprop:Generator_RowChangingName="charvRowChanging" msprop:Generator_RowEvHandlerName="charvRowChangeEventHandler" msprop:Generator_RowDeletedName="charvRowDeleted" msprop:Generator_UserTableName="charv" msprop:Generator_RowChangedName="charvRowChanged" msprop:Generator_RowEvArgName="charvRowChangeEvent" msprop:Generator_RowClassName="charvRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CharityName" msprop:Generator_ColumnVarNameInTable="columnCharityName" msprop:Generator_ColumnPropNameInRow="CharityName" msprop:Generator_ColumnPropNameInTable="CharityNameColumn" msprop:Generator_UserColumnName="CharityName">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

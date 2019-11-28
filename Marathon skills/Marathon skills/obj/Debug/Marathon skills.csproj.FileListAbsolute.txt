@@ -20,3 +20,4 @@ C:\Users\user05\Desktop\464 dmitriev\programma\Marathon skills\Marathon skills\o
 C:\Users\user05\Desktop\464 dmitriev\programma\Marathon skills\Marathon skills\obj\Debug\Marathon_skills.contactrun.resources
 C:\Users\user05\Desktop\464 dmitriev\programma\Marathon skills\Marathon skills\obj\Debug\Marathon_skills.newrunner.resources
 C:\Users\user05\Desktop\464 dmitriev\programma\Marathon skills\Marathon skills\obj\Debug\Marathon_skills.registrationnewrunner.resources
+C:\Users\user05\Desktop\464 dmitriev\programma\Marathon skills\Marathon skills\obj\Debug\Marathon_skills.registration.resources

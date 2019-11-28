@@ -16,5 +16,12 @@ namespace Marathon_skills
         {
             InitializeComponent();
         }
+
+        private void registration_Load(object sender, EventArgs e)
+        {
+            // TODO: This line of code loads data into the 'gr464_DmitrievDataSet3.charv' table. You can move, or remove it, as needed.
+            this.charvTableAdapter.Fill(this.gr464_DmitrievDataSet3.charv);
+
+        }
     }
 }
