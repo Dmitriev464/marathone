@@ -125,6 +125,7 @@
             this.halfmar_chk.TabIndex = 18;
             this.halfmar_chk.Text = "21km Полумарафон ($75)";
             this.halfmar_chk.UseVisualStyleBackColor = true;
+            this.halfmar_chk.CheckedChanged += new System.EventHandler(this.halfmar_chk_CheckedChanged);
             // 
             // minmar_chk
             // 
@@ -135,6 +136,7 @@
             this.minmar_chk.TabIndex = 19;
             this.minmar_chk.Text = "5km Малая дистанция ($20)";
             this.minmar_chk.UseVisualStyleBackColor = true;
+            this.minmar_chk.CheckedChanged += new System.EventHandler(this.minmar_chk_CheckedChanged);
             // 
             // label4
             // 
@@ -181,6 +183,7 @@
             this.vara_rad.TabStop = true;
             this.vara_rad.Text = "Вариант А ($0): Номер бегуна + RFID браслет";
             this.vara_rad.UseVisualStyleBackColor = true;
+            this.vara_rad.CheckedChanged += new System.EventHandler(this.vara_rad_CheckedChanged);
             // 
             // varb_rad
             // 
@@ -191,6 +194,7 @@
             this.varb_rad.TabStop = true;
             this.varb_rad.Text = "Вариант В ($20): вариант А + бейсболка + бутылка воды";
             this.varb_rad.UseVisualStyleBackColor = true;
+            this.varb_rad.CheckedChanged += new System.EventHandler(this.varb_rad_CheckedChanged);
             // 
             // varc_rad
             // 
@@ -201,15 +205,15 @@
             this.varc_rad.TabStop = true;
             this.varc_rad.Text = "Вариант С ($45): вариант В + футболка + сувенирный буклет";
             this.varc_rad.UseVisualStyleBackColor = true;
+            this.varc_rad.CheckedChanged += new System.EventHandler(this.varc_rad_CheckedChanged);
             // 
             // label8
             // 
             this.label8.AutoSize = true;
             this.label8.Location = new System.Drawing.Point(397, 367);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(35, 13);
+            this.label8.Size = new System.Drawing.Size(0, 13);
             this.label8.TabIndex = 27;
-            this.label8.Text = "label8";
             // 
             // reg_btn
             // 

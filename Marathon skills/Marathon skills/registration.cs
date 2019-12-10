@@ -29,16 +29,104 @@ namespace Marathon_skills
         int va = 0;
         int vb = 20;
         int vc = 45;
-
+        int rez = 0;
         private void fulmar_chk_CheckedChanged(object sender, EventArgs e)
         {
 
 
             if (fulmar_chk.Checked == true)
             {
-                label8.Text = "$" + f;
+                
+
+               
+                rez += f;
+                label8.Text = rez.ToString();
             }
-            else { label8.Text ="$"+ (-f); }
+            else {
+              
+                rez -= f;
+                label8.Text = rez.ToString();
+            }
+        }
+
+        private void halfmar_chk_CheckedChanged(object sender, EventArgs e)
+        {
+            if (halfmar_chk.Checked == true)
+            {
+              
+                rez += h;
+                label8.Text = rez.ToString();
+            }
+            else
+            {
+               
+                rez -= h;
+                label8.Text = rez.ToString();
+            }
+        }
+
+        private void minmar_chk_CheckedChanged(object sender, EventArgs e)
+        {
+            if (minmar_chk.Checked == true)
+            {
+
+                rez += m;
+                label8.Text = rez.ToString();
+            }
+            else
+            {
+
+                rez -= m;
+                label8.Text = rez.ToString();
+            }
+        }
+
+        private void vara_rad_CheckedChanged(object sender, EventArgs e)
+        {
+            if (vara_rad.Checked == true)
+            {
+
+                rez += va;
+                label8.Text = rez.ToString();
+            }
+            else
+            {
+
+                rez -= va;
+                label8.Text = rez.ToString();
+            }
+        }
+
+        private void varb_rad_CheckedChanged(object sender, EventArgs e)
+        {
+            if (varb_rad.Checked == true)
+            {
+
+                rez += vb;
+                label8.Text = rez.ToString();
+            }
+            else
+            {
+
+                rez -= vb;
+                label8.Text = rez.ToString();
+            }
+        }
+
+        private void varc_rad_CheckedChanged(object sender, EventArgs e)
+        {
+            if (varc_rad.Checked == true)
+            {
+
+                rez += vc;
+                label8.Text = rez.ToString();
+            }
+            else
+            {
+
+                rez -= vc;
+                label8.Text = rez.ToString();
+            }
         }
 
        
