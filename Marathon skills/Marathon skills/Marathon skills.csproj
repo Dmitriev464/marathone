@@ -50,6 +50,12 @@
     <Compile Include="Admin.Designer.cs">
       <DependentUpon>Admin.cs</DependentUpon>
     </Compile>
+    <Compile Include="charities2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="charities2.Designer.cs">
+      <DependentUpon>charities2.cs</DependentUpon>
+    </Compile>
     <Compile Include="contactrun.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -158,6 +164,9 @@
     </Compile>
     <EmbeddedResource Include="Admin.resx">
       <DependentUpon>Admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="charities2.resx">
+      <DependentUpon>charities2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="contactrun.resx">
       <DependentUpon>contactrun.cs</DependentUpon>

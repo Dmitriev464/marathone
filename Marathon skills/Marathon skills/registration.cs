@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -22,6 +23,8 @@ namespace Marathon_skills
             // TODO: This line of code loads data into the 'gr464_DmitrievDataSet3.charv' table. You can move, or remove it, as needed.
             this.charvTableAdapter.Fill(this.gr464_DmitrievDataSet3.charv);
 
+           
+
         }
         int f = 145;
         int h = 75;
@@ -30,6 +33,9 @@ namespace Marathon_skills
         int vb = 20;
         int vc = 45;
         int rez = 0;
+        public string charname = "";
+
+
         private void fulmar_chk_CheckedChanged(object sender, EventArgs e)
         {
 
@@ -127,6 +133,18 @@ namespace Marathon_skills
                 rez -= vc;
                 label8.Text = rez.ToString();
             }
+        }
+
+        private void info_redcross_Click(object sender, EventArgs e)
+        {
+            charities2 ch = new charities2();
+            ch.Show();
+        }
+
+        private void chr_cmb_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            charities2 ch = new charities2();
+            charname = chr_cmb.Text;
         }
 
        

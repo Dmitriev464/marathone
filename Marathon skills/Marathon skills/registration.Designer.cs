@@ -49,7 +49,7 @@
             this.cancel_btn = new System.Windows.Forms.Button();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-            this.sex_cmb = new System.Windows.Forms.ComboBox();
+            this.chr_cmb = new System.Windows.Forms.ComboBox();
             this.charvBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.gr464_DmitrievDataSet3 = new Marathon_skills.gr464_DmitrievDataSet3();
             this.charvTableAdapter = new Marathon_skills.gr464_DmitrievDataSet3TableAdapters.charvTableAdapter();
@@ -251,16 +251,17 @@
             this.label10.TabIndex = 31;
             this.label10.Text = "Сумма взноса:";
             // 
-            // sex_cmb
+            // chr_cmb
             // 
-            this.sex_cmb.DataSource = this.charvBindingSource;
-            this.sex_cmb.DisplayMember = "CharityName";
-            this.sex_cmb.FormattingEnabled = true;
-            this.sex_cmb.Location = new System.Drawing.Point(96, 342);
-            this.sex_cmb.Name = "sex_cmb";
-            this.sex_cmb.Size = new System.Drawing.Size(121, 21);
-            this.sex_cmb.TabIndex = 32;
-            this.sex_cmb.ValueMember = "CharityName";
+            this.chr_cmb.DataSource = this.charvBindingSource;
+            this.chr_cmb.DisplayMember = "CharityName";
+            this.chr_cmb.FormattingEnabled = true;
+            this.chr_cmb.Location = new System.Drawing.Point(96, 342);
+            this.chr_cmb.Name = "chr_cmb";
+            this.chr_cmb.Size = new System.Drawing.Size(121, 21);
+            this.chr_cmb.TabIndex = 32;
+            this.chr_cmb.ValueMember = "CharityName";
+            this.chr_cmb.SelectedIndexChanged += new System.EventHandler(this.chr_cmb_SelectedIndexChanged);
             // 
             // charvBindingSource
             // 
@@ -286,6 +287,7 @@
             this.info_redcross.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.info_redcross.TabIndex = 33;
             this.info_redcross.TabStop = false;
+            this.info_redcross.Click += new System.EventHandler(this.info_redcross_Click);
             // 
             // registration
             // 
@@ -294,7 +296,7 @@
             this.ClientSize = new System.Drawing.Size(568, 434);
             this.ControlBox = false;
             this.Controls.Add(this.info_redcross);
-            this.Controls.Add(this.sex_cmb);
+            this.Controls.Add(this.chr_cmb);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.cancel_btn);
@@ -347,10 +349,10 @@
         private System.Windows.Forms.Button cancel_btn;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.ComboBox sex_cmb;
         private gr464_DmitrievDataSet3 gr464_DmitrievDataSet3;
         private System.Windows.Forms.BindingSource charvBindingSource;
         private gr464_DmitrievDataSet3TableAdapters.charvTableAdapter charvTableAdapter;
         private System.Windows.Forms.PictureBox info_redcross;
+        public System.Windows.Forms.ComboBox chr_cmb;
     }
 }

@@ -11,23 +11,26 @@ using System.Windows.Forms;
 
 namespace Marathon_skills
 {
-    public partial class charities : Form
+    public partial class charities2 : Form
     {
-        public charities()
+        public charities2()
         {
             InitializeComponent();
         }
 
-        private void charities_Load(object sender, EventArgs e)
+        private void charities2_Load(object sender, EventArgs e)
         {
+            registration reg = new registration();
+            string chrname = "";
+            chrname = reg.charname;
             string connetionString = null;
             SqlCommand cmd;
             SqlConnection con;
             connetionString = ("Data Source=127.0.0.1;Initial Catalog=gr464_Dmitriev;User ID=student;Password=student");
             con = new SqlConnection(connetionString);
             con.Open();
-            cmd = new SqlCommand("Select [CharityName],[CharityDescription],[CharityLogo] from Charity", con);
-            SqlDataReader rdr=cmd.ExecuteReader();
+            cmd = new SqlCommand("Select [CharityName],[CharityDescription],[CharityLogo] from Charity where [CharityName]='chrname'", con);
+            SqlDataReader rdr = cmd.ExecuteReader();
             
             while (rdr.Read())
             {
@@ -39,16 +42,8 @@ namespace Marathon_skills
                 flowLayoutPanel1.Controls.Add(ctl.pict_chr);
                 flowLayoutPanel1.Controls.Add(ctl.name_chr);
                 flowLayoutPanel1.Controls.Add(ctl.descr_chr);
+
             }
-
         }
-
-        private void btn_bck_charity_Click(object sender, EventArgs e)
-        {
-            Form1 main = new Form1();
-            main.Show();
-            this.Close();
-        }
-
     }
 }
