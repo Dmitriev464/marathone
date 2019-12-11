@@ -54,6 +54,7 @@
             this.gr464_DmitrievDataSet3 = new Marathon_skills.gr464_DmitrievDataSet3();
             this.charvTableAdapter = new Marathon_skills.gr464_DmitrievDataSet3TableAdapters.charvTableAdapter();
             this.info_redcross = new System.Windows.Forms.PictureBox();
+            this.label11 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.charvBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gr464_DmitrievDataSet3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.info_redcross)).BeginInit();
@@ -289,12 +290,22 @@
             this.info_redcross.TabStop = false;
             this.info_redcross.Click += new System.EventHandler(this.info_redcross_Click);
             // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(295, 399);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(41, 13);
+            this.label11.TabIndex = 34;
+            this.label11.Text = "label11";
+            // 
             // registration
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(568, 434);
             this.ControlBox = false;
+            this.Controls.Add(this.label11);
             this.Controls.Add(this.info_redcross);
             this.Controls.Add(this.chr_cmb);
             this.Controls.Add(this.label10);
@@ -354,5 +365,6 @@
         private gr464_DmitrievDataSet3TableAdapters.charvTableAdapter charvTableAdapter;
         private System.Windows.Forms.PictureBox info_redcross;
         public System.Windows.Forms.ComboBox chr_cmb;
+        private System.Windows.Forms.Label label11;
     }
 }

@@ -33,7 +33,8 @@ namespace Marathon_skills
         int vb = 20;
         int vc = 45;
         int rez = 0;
-        public string charname = "";
+
+      public  string charname;
 
 
         private void fulmar_chk_CheckedChanged(object sender, EventArgs e)
@@ -141,10 +142,11 @@ namespace Marathon_skills
             ch.Show();
         }
 
-        private void chr_cmb_SelectedIndexChanged(object sender, EventArgs e)
+        public void chr_cmb_SelectedIndexChanged(object sender, EventArgs e)
         {
             charities2 ch = new charities2();
-            charname = chr_cmb.Text;
+            ch.chrname = chr_cmb.Text;
+            
         }
 
        

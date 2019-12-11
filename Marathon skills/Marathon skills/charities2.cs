@@ -17,19 +17,19 @@ namespace Marathon_skills
         {
             InitializeComponent();
         }
-
-        private void charities2_Load(object sender, EventArgs e)
+        public string chrname;
+        public void charities2_Load(object sender, EventArgs e)
         {
-            registration reg = new registration();
-            string chrname = "";
-            chrname = reg.charname;
+            
+            
+            
             string connetionString = null;
             SqlCommand cmd;
             SqlConnection con;
             connetionString = ("Data Source=127.0.0.1;Initial Catalog=gr464_Dmitriev;User ID=student;Password=student");
             con = new SqlConnection(connetionString);
             con.Open();
-            cmd = new SqlCommand("Select [CharityName],[CharityDescription],[CharityLogo] from Charity where [CharityName]='chrname'", con);
+            cmd = new SqlCommand("Select [CharityName],[CharityDescription],[CharityLogo] from Charity where [CharityName] =", con);
             SqlDataReader rdr = cmd.ExecuteReader();
             
             while (rdr.Read())
