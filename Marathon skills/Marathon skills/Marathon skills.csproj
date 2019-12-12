@@ -56,6 +56,7 @@
     <Compile Include="charities2.Designer.cs">
       <DependentUpon>charities2.cs</DependentUpon>
     </Compile>
+    <Compile Include="charityteeee.cs" />
     <Compile Include="contactrun.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -156,6 +157,12 @@
     <Compile Include="thxdonate.Designer.cs">
       <DependentUpon>thxdonate.cs</DependentUpon>
     </Compile>
+    <Compile Include="thxreg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="thxreg.Designer.cs">
+      <DependentUpon>thxreg.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserControl1.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -216,6 +223,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="thxdonate.resx">
       <DependentUpon>thxdonate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="thxreg.resx">
+      <DependentUpon>thxreg.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControl1.resx">
       <DependentUpon>UserControl1.cs</DependentUpon>

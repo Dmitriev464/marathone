@@ -145,8 +145,15 @@ namespace Marathon_skills
         public void chr_cmb_SelectedIndexChanged(object sender, EventArgs e)
         {
             charities2 ch = new charities2();
-            ch.chrname = chr_cmb.Text;
+           charityteeee.chrname = chr_cmb.Text;
             
+        }
+
+        private void reg_btn_Click(object sender, EventArgs e)
+        {
+            thxreg thanksreg = new thxreg();
+            thanksreg.Show();
+            this.Close();
         }
 
        

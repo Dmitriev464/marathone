@@ -16,9 +16,10 @@ namespace Marathon_skills
         public charities2()
         {
             InitializeComponent();
-           
+            
         }
-       public string chrname=null;
+
+     public string chrname;
         public void charities2_Load(object sender, EventArgs e)
         {
             
@@ -31,8 +32,8 @@ namespace Marathon_skills
             con = new SqlConnection(connetionString);
             con.Open();
           
-            cmd = new SqlCommand("Select [CharityName],[CharityDescription],[CharityLogo] from Charity where [CharityName] = @chr", con);
-            cmd.Parameters.AddWithValue("@chrname", chrname);
+            cmd = new SqlCommand("Select [CharityName],[CharityDescription],[CharityLogo] from Charity where [CharityName] ='"+charityteeee.chrname+"'", con);
+          //  cmd.Parameters.AddWithValue("@chrname", chrname);
             SqlDataReader rdr = cmd.ExecuteReader();
             
             while (rdr.Read())

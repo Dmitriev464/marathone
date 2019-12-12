@@ -224,6 +224,7 @@
             this.reg_btn.TabIndex = 28;
             this.reg_btn.Text = "Регистрация";
             this.reg_btn.UseVisualStyleBackColor = true;
+            this.reg_btn.Click += new System.EventHandler(this.reg_btn_Click);
             // 
             // cancel_btn
             // 
